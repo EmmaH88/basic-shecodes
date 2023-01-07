@@ -67,9 +67,21 @@
       <button>Apply Now</button>
     </section>
     <script>
+      let age = prompt("how old are you?");
+      if (age >= 16) {
+        alert("you can drive");
+      }
+      if (age <= 15) {
+        alert("you cant drive");
+      }
+
       let languageSpoken = prompt("which language do you speak");
-      if (languageSpoken === "French") {
+      if (languageSpoken === "French" || "french") {
         alert("Bonjour");
+      }
+
+      if (languageSpoken !== "French") {
+        alert("👋👋👋👋");
       }
     </script>
   </body>
